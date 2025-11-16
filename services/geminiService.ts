@@ -1,10 +1,12 @@
+
 import { GoogleGenAI, Type } from "@google/genai";
 import { Question, Feedback } from "../types";
 
+// FIX: Switched from `import.meta.env.VITE_API_KEY` to `process.env.API_KEY` to resolve the TypeScript error and adhere to the coding guidelines.
 const API_KEY = process.env.API_KEY;
 
 if (!API_KEY) {
-  throw new Error("API_KEY environment variable not set");
+  throw new Error("API_KEY environment variable not set. Please set it in your deployment environment.");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
