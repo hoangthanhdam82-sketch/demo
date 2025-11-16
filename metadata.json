@@ -1,0 +1,7 @@
+{
+  "name": "EduMatrix AI",
+  "description": "An AI-powered web platform to automate quiz generation for teachers and provide personalized learning paths for students. It leverages Gemini to create, grade, and provide feedback on educational content.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
